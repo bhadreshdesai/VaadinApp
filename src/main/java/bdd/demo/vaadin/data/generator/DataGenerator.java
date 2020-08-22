@@ -36,7 +36,6 @@ public class DataGenerator {
             personRepository.saveAll(personRepositoryGenerator.create(100));
 
 
-
             logger.info("Generated demo data");
         };
     }

@@ -16,7 +16,8 @@ import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.templatemodel.TemplateModel;
-import com.vaadin.flow.router.RouteAlias;import bdd.demo.vaadin.views.main.MainView;
+import com.vaadin.flow.router.RouteAlias;
+import bdd.demo.vaadin.views.main.MainView;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class MasterDetailView extends PolymerTemplate<TemplateModel> {
     private TextField email;
     @Id
     private PasswordField password;
-    
+
     @Id
     private Button cancel;
     @Id
@@ -62,7 +63,7 @@ public class MasterDetailView extends PolymerTemplate<TemplateModel> {
         // Add to the `<slot name="grid">` defined in the template
         grid.getElement().setAttribute("slot", "grid");
         getElement().appendChild(grid.getElement());
-        
+
         // when a row is selected or deselected, populate form
         grid.asSingleSelect().addValueChangeListener(event -> populateForm(event.getValue()));
 

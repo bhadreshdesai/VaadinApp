@@ -1,7 +1,7 @@
 package bdd.demo.vaadin.views.cardlist;
 
 public class Person {
-    
+
     private String image;
     private String name;
     private String date;

@@ -87,10 +87,10 @@ public class MainView extends AppLayout {
     }
 
     private Component[] createMenuItems() {
-        RouterLink[] links = new RouterLink[] {
-            new RouterLink("Master-Detail", MasterDetailView.class),
-            new RouterLink("Card List", CardListView.class),
-            new RouterLink("Form", FormView.class)
+        RouterLink[] links = new RouterLink[]{
+                new RouterLink("Master-Detail", MasterDetailView.class),
+                new RouterLink("Card List", CardListView.class),
+                new RouterLink("Form", FormView.class)
         };
         return Arrays.stream(links).map(MainView::createTab).toArray(Tab[]::new);
     }
